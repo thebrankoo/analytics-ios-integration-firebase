@@ -31,6 +31,7 @@
         }
 
         [FIRApp configure];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"SEGFirebaseIntegrationFIRAppConfigureCalled" object:nil];
         SEGLog(@"[FIRApp Configure]");
     }
     return self;
